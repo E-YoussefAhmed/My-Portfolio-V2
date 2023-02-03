@@ -34,11 +34,14 @@ const Contact = () => {
 
   const handleSubmit1 = async () => {
     try {
-      const res = await fetch("http://localhost:8080/api/v1/contacts", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData }),
-      });
+      const res = await fetch(
+        "https://my-portfolio-z3g0.onrender.com/api/v1/contacts",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...formData }),
+        }
+      );
       const { error } = await res.json();
       if (!res.ok) {
         setErrors(error);

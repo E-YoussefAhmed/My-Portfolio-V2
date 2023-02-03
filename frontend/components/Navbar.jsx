@@ -6,37 +6,7 @@ import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import NavLink from "./NavLink";
-
-const navbarVariants = {
-  hide: {
-    y: -100,
-    opacity: 0,
-    transition: {
-      type: "spring",
-      delay: 0.5,
-    },
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      delay: 0.5,
-    },
-  },
-};
-
-const navMenuVariants = {
-  hide: {
-    x: "80%",
-  },
-  show: {
-    x: 0,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
+import { navbarVariants, navMenuVariants } from "../utils/motion";
 
 const links = [
   { link: "/", title: "Home" },

@@ -96,7 +96,7 @@ const Contact = () => {
       </motion.div>
       {!state.succeeded ? (
         <form
-          className="flex flex-col items-center justify-evenly mobile:grid mobile:grid-cols-1 mobile:gap-5 mobile:mt-4  mobile:w-full mobile:h-[450px] tablet:h-[60%] w-[80%] h-[65%] lg:w-7/12"
+          className="flex flex-col items-center justify-between mobile:grid mobile:grid-cols-1 mobile:gap-5 mobile:mt-4  mobile:w-full mobile:h-[450px] tablet:h-[60%] w-[80%] h-[65%] lg:w-7/12"
           onSubmit={(e) => {
             e.preventDefault();
             if (

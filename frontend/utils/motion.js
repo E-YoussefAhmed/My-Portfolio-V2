@@ -1,3 +1,32 @@
+export const navbarVariants = {
+  hide: {
+    y: -100,
+    transition: {
+      type: "spring",
+      delay: 0.5,
+    },
+  },
+  show: {
+    y: 0,
+    transition: {
+      type: "spring",
+      delay: 0.5,
+    },
+  },
+};
+
+export const navMenuVariants = {
+  hide: {
+    x: "80%",
+  },
+  show: {
+    x: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 export const homeVariants = {
   hide: {
     opacity: 0,

@@ -64,7 +64,7 @@ const Works = ({ works }) => {
           </div>
         ))}
       </div>
-      <div className="flex max-w-full dark:scrollbar-track-gray-300/20 scrollbar-track-gray-600/30 dark:scrollbar-thumb-darkColor scrollbar-thumb-lightColor scrollbar-thin md:scrollbar overflow-x-auto overflow-y-hidden space-x-5 px-10 pb-8 snap-x snap-mandatory">
+      <div className="flex max-w-full dark:scrollbar-track-gray-300/20 scrollbar-track-gray-600/30 dark:scrollbar-thumb-darkColor scrollbar-thumb-lightColor scrollbar-thin md:scrollbar overflow-x-auto overflow-y-hidden space-x-5 px-10 pb-8 lg:snap-x lg:snap-mandatory">
         {filteredWork?.map((work, i) => (
           <motion.div variants={cardVariants} key={work._id}>
             <WorksCard {...work} />

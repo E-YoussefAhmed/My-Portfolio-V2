@@ -11,7 +11,7 @@ const WorksCard = ({
   tags,
 }) => {
   return (
-    <div className="work-card relative rounded-xl text-white mobile:w-[300px] mobile:h-[280px] w-[500px] h-[450px] dark:bg-[#333] overflow-hidden snap-center  ">
+    <div className="work-card relative rounded-xl text-white mobile:w-[300px] mobile:h-[280px] w-[500px] h-[450px] dark:bg-[#333] overflow-hidden lg:snap-center">
       <img src={photo} alt="work" className="object-cover" />
       <div className="card-info justify-evenly items-center p-4 opacity-0 absolute w-full h-full top-0 left-0 z-50 bg-[rgba(0,0,0,0.8)] transition duration-300 flex flex-col">
         <h1 className="text-2xl font-semibold">{title}</h1>

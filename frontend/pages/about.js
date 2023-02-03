@@ -35,7 +35,7 @@ const About = ({ about }) => {
           Good Business
         </span>
       </h1>
-      <div className="flex mobile:p-3 overflow-x-auto dark:scrollbar-track-gray-300/20 scrollbar-track-gray-600/30  dark:scrollbar-thumb-darkColor scrollbar-thumb-lightColor scrollbar-thin md:scrollbar snap-x snap-mandatory overflow-y-hidden max-w-full">
+      <div className="flex mobile:p-3 overflow-x-auto dark:scrollbar-track-gray-300/20 scrollbar-track-gray-600/30  dark:scrollbar-thumb-darkColor scrollbar-thumb-lightColor scrollbar-thin md:scrollbar overflow-y-hidden max-w-full">
         {about?.map((el, i) => (
           <motion.div variants={cardVariants} key={el._id}>
             <AboutCard {...el} />

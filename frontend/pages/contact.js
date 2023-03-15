@@ -141,7 +141,7 @@ const Contact = () => {
             name="message"
             placeholder="Your Message"
             value={formData.message}
-            className="outline-none dark:bg-[#333] bg-gray-300 placeholder:text-black/60 dark:placeholder:text-white/60 w-full sm:h-[200px] p-4 rounded-lg focus:border-2 focus:border-lightColor dark:focus:border-darkColor"
+            className="outline-none resize-none dark:bg-[#333] bg-gray-300 placeholder:text-black/60 dark:placeholder:text-white/60 w-full sm:h-[200px] p-4 rounded-lg focus:border-2 focus:border-lightColor dark:focus:border-darkColor"
             onChange={handleChange}
           ></motion.textarea>
           {errors && (

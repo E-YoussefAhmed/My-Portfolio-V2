@@ -110,7 +110,11 @@ const Navbar = () => {
               (item) => (
                 <li
                   key={item}
-                  className="uppercase mx-4 my-8 text-base font-medium hover:text-lightColor dark:hover:text-darkColor"
+                  className={`${
+                    `/${item}` === router.asPath
+                      ? "dark:text-darkColor text-lightColor"
+                      : ""
+                  } uppercase mx-4 my-8 text-base font-medium hover:text-lightColor dark:hover:text-darkColor`}
                 >
                   <Link href={`/${item}`} onClick={() => setShowMenu(false)}>
                     {item}

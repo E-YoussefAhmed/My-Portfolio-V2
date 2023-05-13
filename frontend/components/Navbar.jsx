@@ -102,7 +102,7 @@ const Navbar = () => {
             ))}
           <ul>
             <li className={`${
-                    `/${item}` === router.asPath
+                    `/` === router.asPath
                       ? "dark:text-darkColor text-lightColor"
                       : ""
                   } uppercase mx-4 my-8 text-base font-medium hover:text-lightColor dark:hover:text-darkColor`}>
